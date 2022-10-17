@@ -3,7 +3,7 @@ function arraysDemo(input) {
     let inputArraySum = 0;
     let modifiedArraySum = 0;
     let inpputLength = input.length;
-    
+
     for (let i = 0; i < inpputLength; i++) {
         let currentNumber = input[i];
         let even = currentNumber + i;

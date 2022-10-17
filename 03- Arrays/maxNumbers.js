@@ -11,7 +11,7 @@ function maxNUmbers(arr) {
         }
         if (isBigger) {
             resultArray.push(arr[i]);
-        }
+        } 
     }
 
     console.log(resultArray.join(' '));
