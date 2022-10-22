@@ -1,5 +1,4 @@
 function maxSequence(arr) {
-    arr = arr[0].split(' ');
     let longestSequence = [];
     let leftMostIndex = 0;
  
