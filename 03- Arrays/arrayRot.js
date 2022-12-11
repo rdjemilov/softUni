@@ -1,11 +1,9 @@
 function arrayRot(array, rotations) {
-    for (let index = 0; index < rotations; index++) {
-        let numberToMove = array.shift();
-        array.push(numberToMove); 
-        
+    for (let i = 0; i < rotations; i++) {
+        let numToMove = array.shift();
+        array.push(numToMove);
     }
-
-    console.log(array.join(' '));
+    console.log(array);
 }
 
 arrayRot([51, 47, 32, 61, 21], 2);

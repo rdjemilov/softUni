@@ -1,19 +1,19 @@
 function maxNUmbers(arr) {
-    let resultArray = [];
+    let resultArr = [];
 
-    for (let i = 0; i < arr.length; i++) {
+    for(let i = 0; i < arr.length; i++) {
+        let currentNum = arr[i];
         let isBigger = true;
-        let currentNumber = arr[i];
-        for (let k = i + 1; k < arr.length; k++) {
-            if (currentNumber <= arr[k]) {
+        for(let k = i + 1; k < arr.length; k++) {
+            if (currentNum <= arr[k]) {
                 isBigger = false;
-            }            
+            }
+            
         }
         if (isBigger) {
-            resultArray.push(arr[i]);
-        } 
+            resultArr.push(arr[i]);
+        }
     }
-
-    console.log(resultArray.join(' '));
+    console.log(resultArr.join(' '));
 }
 maxNUmbers([1, 4, 3, 2])
